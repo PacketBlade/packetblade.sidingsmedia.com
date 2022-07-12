@@ -6,6 +6,21 @@ SPDX-License-Identifier: CC-BY-SA-4.0
 # Packet Blade
 Template repository
 
+
+## Developing
+
+Install the dependencies with [Bundler](http://bundler.io/):
+
+```bash
+$ bundle install
+```
+
+Run `jekyll` commands through Bundler to ensure you're using the right versions:
+
+```bash
+$ bundle exec jekyll serve
+```
+
 ## Licence
 This repo uses the [REUSE](https://reuse.software) standard in order to
 communicate the correct licence for the file. For those unfamiliar with

@@ -1,0 +1,6 @@
+# SPDX-FileCopyrightText: 2022 Sidings Media <packetblade@sidingsmedia.com>
+# SPDX-License-Identifier: CC0-1.0
+
+[submodule "images/logos"]
+	path = images/logos
+	url = https://github.com/PacketBlade/logos.git

@@ -1,0 +1,53 @@
+# SPDX-FileCopyrightText: 2016-2020 CloudCannon <support@cloudcannon.com>
+# SPDX-FileCopyrightText: 2022 Sidings Media <packetblade@sidingsmedia.com>
+# SPDX-License-Identifier: MIT
+
+- column:
+  name: Project
+  links:
+    - name: GitHub
+      link: https://github.com/packetblade
+      new_window: true
+    - name: Blog
+      link: /blog/
+    - name: Docs
+      link: https://docs.sidingsmedia.com/project/packetblade/en/latest/
+      new_window: true
+    - name: Contact
+      link: /contact/
+
+- column:
+  name: Organization
+  links:
+    - name: Main Site
+      link: https://sidingsmedia.com
+      new_window: true
+    - name: Service Status
+      link: https://status.sidingsmedia.com
+      new_window: true
+    - name: Other Projects
+      link: https://sidingsmedia.com/projects/
+      new_window: true
+    - name: Support
+      link: https://sidingsmedia.com/contact/
+      new_window: true
+
+- column:
+  name: Social Media
+  links:
+    - name: Facebook
+      link: https://facebook.com/sidingsmediaofficial/
+      new_window: true
+      social_icon: Facebook
+    - name: Twitter
+      link: https://twitter.com/sidingsmedia/
+      social_icon: Twitter
+      new_window: true
+    - name: Instagram
+      link: https://instagram.com/sidingsmedia/
+      social_icon: Instagram
+      new_window: true
+    - name: RSS
+      link: /feed.xml
+      social_icon: RSS
+      new_window: false
