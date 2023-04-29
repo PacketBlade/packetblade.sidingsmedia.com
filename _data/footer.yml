@@ -8,8 +8,6 @@
     - name: GitHub
       link: https://github.com/packetblade
       new_window: true
-    - name: Blog
-      link: /blog/
     - name: Docs
       link: https://docs.sidingsmedia.com/project/packetblade/en/latest/
       new_window: true
@@ -19,17 +17,17 @@
 - column:
   name: Organization
   links:
-    - name: Main Site
+    - name: About
       link: https://sidingsmedia.com
       new_window: true
     - name: Service Status
       link: https://status.sidingsmedia.com
       new_window: true
     - name: Other Projects
-      link: https://sidingsmedia.com/projects/
+      link: https://sidingsmedia.com/#projects
       new_window: true
     - name: Support
-      link: https://sidingsmedia.com/contact/
+      link: https://sidingsmedia.com/#contact
       new_window: true
 
 - column:
