@@ -1,17 +1,16 @@
 // SPDX-FileCopyrightText: 2016-2020 CloudCannon <support@cloudcannon.com>
 // SPDX-License-Identifier: MIT
 
-.button a, input[type=submit] {
+.button a {
 	color: #fff;
 	text-decoration: none;
-	padding: 10px 30px;
 	background: $brand-color;
 	border-radius: 3px;
 	border: 1px solid rgba(255,255,255,.5);
 	transition: .2s ease-in-out;
 }
 
-.button a:hover, input[type=submit]:hover {
+.button a:hover {
 	border: 1px solid #fff;
 	background: $secondary-brand-color;
 	cursor: pointer;
@@ -31,9 +30,9 @@
 
 textarea, input, button, select { font-family: inherit; font-size: inherit; }
 
-input[type=submit] {
-	margin: 20px 0 0 0;
-}
+// input[type=submit] {
+// 	margin: 20px 0 0 0;
+// }
 
 label, input, textarea {
 	display: block;

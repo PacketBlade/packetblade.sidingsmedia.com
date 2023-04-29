@@ -10,16 +10,75 @@ SPDX-FileCopyrightText: 2022 Sidings Media <packetblade@sidingsmedia.com>
 SPDX-License-Identifier: MIT
 -->
 
-<div class="contact-box">
-	<div class="contact-details">
-        <p>You can contact Sidings Media and the Packet Blade team
-        athrough number of mediums. Feel free to drop us an email or
-        send a message on your favorite social media platform. You can
-        also head over to our main website for more information.  </p>
+<section class="contact" id="contact">
+    <div class="row center-xs">
+        <div class="col-xs-12">
+            <noscript>Please enable JavaScript to use the contact form.</noscript>
+        </div>
+    </div>
+    <form id="form-contact" method="post">
+            <input
+                type="text"
+                name="name"
+                aria-label="name"
+                placeholder="Your name"
+                required=""
+            />
+            <input
+                type="email"
+                id="email"
+                name="email"
+                aria-label="email address"
+                placeholder="E-Mail address"
+                required=""
+            />
+            <input
+                type="text"
+                name="_subject"
+                aria-label="email subject"
+                placeholder="Subject"
+                required=""
+            />
+            <textarea
+                name="message"
+                aria-label="Please enable JS"
+                style="visibility: hidden"
+                class="hide"
+                hidden="true"
+            ></textarea>
+            <textarea
+                name="message2"
+                aria-label="email message"
+                placeholder="Your message"
+                required=""
+                style="visibility: visible"
+                class="show"
+            ></textarea>
+        <div class="contact-submit">
+            <input
+                id="form-submit"
+                type="submit"
+                value="Send"
+                style="visibility: visible"
+                class="show"
+            />
+            <span
+                id="form-sending"
+                style="visibility: hidden"
+                class="hide"
+                hidden="true"
+                >Deploying your message...</span
+            >
+            <span id="form-thankyou" style="visibility: hidden" class="hide" hidden="true">
+                Thanks for your message!
+            </span>
+            <span id="form-error" hidden="">
+                Sorry, we couldn't send your message! Please reload.
+            </span>
+        </div>
+      </div>
+    </form>
+</section>
 
-		<h3>Email</h3>
-		<p><a href="mailto:packetblade@sidingsmedia.com">packetblade@sidingsmedia.com</a></p>
-        <h3>Main site</h3> 
-        <p><a href="https://sidingsmedia.com/contact/" target="_blank" >sidingsmedia.com/contact/</a></p>
-	</div>
-</div>
+<script src="/js/base.js"></script>
+<script src="/js/contact.js"></script>

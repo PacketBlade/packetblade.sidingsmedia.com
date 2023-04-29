@@ -1,35 +1,107 @@
 // SPDX-FileCopyrightText: 2016-2020 CloudCannon <support@cloudcannon.com>
+// SPDX-FileCopyrightText: 2023 Sidings Media
 // SPDX-License-Identifier: MIT
 
-.map {
-	width: 100%;
-	margin: 100px 0;
-	height: 400px;
+.contact {
+  @extend %flexbox;
+  @include flex-flow(wrap);
+  max-width: 750px;
+  margin: 0 auto;
+
+  form {
+    width: 100%;
+  }
+
+  p {
+    margin: 0;
+  }
+
+  #form-contact,
+  .contact-details {
+    @media #{$desktop} {
+      -webkit-flex: 1;
+      flex: 1;
+    }
+    margin: 0 30px;
+  }
+
+  .contact-details {
+    font-size: 0.9em;
+  }
+
+  .hide {
+    opacity: 0;
+    display: none;
+  }
+
+  textarea {
+    min-height: 8rem;
+    overflow: auto;
+    resize: vertical;
+  }
+  input,
+  textarea,
+  button,
+  select {
+    width: 100%;
+    margin: 8px 0;
+    padding: 10px;
+    border-width: 1px;
+    border-style: solid;
+    border-radius: 3px;
+    border-color: $brand-color;
+  }
+
+  #form-thankyou,
+  #form-sending,
+  #form-error {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    width: 100%;
+  }
+  .contact-submit {
+    position: relative;
+    flex-basis: 100%;
+    max-width: 100%;
+    box-sizing: border-box;
+    -webkit-box-flex: 0;
+    -ms-flex: 0 0 auto;
+    flex: 0 0 auto;
+    flex-basis: auto;
+    background-color: $brand-color;
+    color: #ffffff;
+    border-radius: 3px;
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    transition: .4s ease-out;
+  }
+
+  #form-submit {
+    display: block;
+    width: 100%;
+    margin: 0 auto;
+    transition: 0.4s ease-out;
+    text-align: center;
+    background-color: inherit;
+    border: none;
+    color: inherit;
+  }
+
+  .contact-submit:hover {
+    background-color: $secondary-brand-color;
+  }
 }
 
-.contact-box {
-	@extend %flexbox;
-	@include flex-flow(wrap);
-	max-width: 750px;
-	margin: 0 auto;
-
-	form {
-		width: 100%
-	}
-
-	p {
-		margin: 0;
-	}
-
-	.contact-form, .contact-details  {
-		@media #{$desktop} {
-			-webkit-flex: 1;
-			flex: 1;
-		}
-		margin: 0 30px;
-	}
-
-	.contact-details {
-		font-size: .9em;
-	}
+input,
+textarea,
+button,
+select {
+  width: 100%;
+  margin: 8px 0;
+  padding: 10px;
+  border-width: 1px;
+  border-style: solid;
+  border-radius: 3px;
 }
